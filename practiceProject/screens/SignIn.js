@@ -11,6 +11,7 @@ const SignIn = ({ navigation }) => {
   function navigate() {
     navigation.navigate("signUp");
   }
+
   return (
     <View style={styles.mainview}>
       <View style={styles.topView}>
@@ -40,7 +41,7 @@ const SignIn = ({ navigation }) => {
             <Text style={styles.loginbutton}>Sign In</Text>
           </TouchableOpacity>
 
-          <TouchableOpacity style={styles.button1}>
+          <TouchableOpacity style={styles.button1} onPress={navigate}>
             <Text style={styles.loginbutton1}>Sign Up</Text>
           </TouchableOpacity>
         </View>
@@ -77,12 +78,12 @@ const styles = StyleSheet.create({
   topView: {
     width: "100%",
     height: "40%",
-    backgroundColor: "#f2f7f2",
+    backgroundColor: "#fbf5f3",
   },
   bottomView: {
     width: "100%",
     height: "70%",
-    backgroundColor: "#8e5572",
+    backgroundColor: "#e28413",
     borderTopLeftRadius: 30,
     borderTopRightRadius: 30,
   },
@@ -103,36 +104,36 @@ const styles = StyleSheet.create({
     fontSize: 18,
     marginTop: 20,
   },
-  button:{
-    width:'90%',
-    color:'black',
-    backgroundColor:'#f2f7f2',
-    height:52,
-    borderRadius:10,
-    marginTop:50,
-    display:'felx',
-    justifyContent:'center',
-    alignItems:'center'
+  button: {
+    width: "90%",
+    color: "black",
+    backgroundColor: "#fbf5f3",
+    height: 52,
+    borderRadius: 10,
+    marginTop: 50,
+    display: "felx",
+    justifyContent: "center",
+    alignItems: "center",
   },
-  loginbutton:{
-    fontSize:18,
-    fontWeight:'bold'
+  loginbutton: {
+    fontSize: 18,
+    fontWeight: "bold",
   },
-  button1:{
-    width:'90%',
-    color:'black',
-    backgroundColor:'#f2f7f2',
-    height:52,
-    borderRadius:10,
-    marginTop:20,
-    display:'felx',
-    justifyContent:'center',
-    alignItems:'center'
+  button1: {
+    width: "90%",
+    color: "black",
+    backgroundColor: "#fbf5f3",
+    height: 52,
+    borderRadius: 10,
+    marginTop: 20,
+    display: "felx",
+    justifyContent: "center",
+    alignItems: "center",
   },
-  loginbutton1:{
-    fontSize:18,
-    fontWeight:'bold'
-  }
+  loginbutton1: {
+    fontSize: 18,
+    fontWeight: "bold",
+  },
 });
 
 export default SignIn;
